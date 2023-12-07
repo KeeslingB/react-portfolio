@@ -4,10 +4,10 @@ import Footer from './components/Footer'
 import Project from './components/Project'
 import './App.css'
 import { Outlet } from 'react-router-dom';
-import Nav from './components/Nav';
+// import Nav from './components/Nav';
 
-const App = 12
-function App() { App }
+// const App = 12
+// function App() { App }
 
 
 function App() {
