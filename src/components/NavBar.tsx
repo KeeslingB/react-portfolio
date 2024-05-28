@@ -1,31 +1,31 @@
-import { Nav, Navbar, Container, NavDropdown } from "react-bootstrap";
+import Container from "react-bootstrap/Container";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
+import Dropdown from "react-bootstrap/Dropdown";
+
 export default function NavBar() {
   return (
-    <Navbar bg="primary" expand="md">
+    <Navbar bg="dark" data-bs-theme="dark">
       <Container>
-        <Navbar.Brand href="#home">Navbar Brand</Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#link">Link</Nav.Link>
-            <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">
-                Dropdown Item 1
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Dropdown Item 2
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">
-                Dropdown Item 3
-              </NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Another Item
-              </NavDropdown.Item>
-            </NavDropdown>
-          </Nav>
-        </Navbar.Collapse>
+        <Navbar.Brand href="#home">Brendan Keesling</Navbar.Brand>
+        <Nav className="me-end">
+          <Nav.Link href="#home">Home</Nav.Link>
+          <Nav.Link href="#about">About</Nav.Link>
+          <Nav.Link href="#experience">Experience</Nav.Link>
+          <Nav.Link href="#projects">Projects</Nav.Link>
+        </Nav>
+        <Dropdown>
+          <Dropdown.Toggle variant="dark" id="dropdown-basic">
+            Contact
+          </Dropdown.Toggle>
+
+          <Dropdown.Menu>
+            <Dropdown.Item href="#/action-1">Email</Dropdown.Item>
+            <Dropdown.Item href="#/action-2">Github</Dropdown.Item>
+            <Dropdown.Item href="#/action-3">Linkedin</Dropdown.Item>
+            <Dropdown.Item href="#/action-3">Resume</Dropdown.Item>
+          </Dropdown.Menu>
+        </Dropdown>
       </Container>
     </Navbar>
   );
