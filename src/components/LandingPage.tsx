@@ -1,5 +1,7 @@
-import Carousel from "./Carousel";
-
 export default function LandingPage() {
-  return <Carousel />;
+  return (
+    <>
+      <h1>Landing Page.</h1>
+    </>
+  );
 }
