@@ -3,7 +3,7 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Dropdown from "react-bootstrap/Dropdown";
 
-export default function NavBar() {
+function NavBar() {
   return (
     <Navbar bg="dark" data-bs-theme="dark">
       <Container>
@@ -11,7 +11,6 @@ export default function NavBar() {
         <Nav className="me-end">
           <Nav.Link href="#home">Home</Nav.Link>
           <Nav.Link href="#about">About</Nav.Link>
-          <Nav.Link href="#experience">Experience</Nav.Link>
           <Nav.Link href="#projects">Projects</Nav.Link>
         </Nav>
         <Dropdown>
@@ -30,3 +29,5 @@ export default function NavBar() {
     </Navbar>
   );
 }
+
+export default NavBar;
