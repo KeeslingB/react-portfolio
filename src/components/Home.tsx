@@ -1,7 +1,4 @@
-// import city from "../assets/images/minneapolis.jpg";
-
 function Home() {
-  return <></>;
+  return;
 }
-
 export default Home;

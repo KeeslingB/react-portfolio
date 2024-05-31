@@ -1,32 +1,51 @@
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import Dropdown from "react-bootstrap/Dropdown";
+import NavDropdown from "react-bootstrap/NavDropdown";
+import Offcanvas from "react-bootstrap/Offcanvas";
 
 function NavBar() {
   return (
-    <Navbar bg="dark" data-bs-theme="dark">
-      <Container>
-        <Navbar.Brand href="#home">Brendan Keesling</Navbar.Brand>
-        <Nav className="me-end">
-          <Nav.Link href="#home">Home</Nav.Link>
-          <Nav.Link href="#about">About</Nav.Link>
-          <Nav.Link href="#projects">Projects</Nav.Link>
-        </Nav>
-        <Dropdown>
-          <Dropdown.Toggle variant="dark" id="dropdown-basic">
-            Contact
-          </Dropdown.Toggle>
-
-          <Dropdown.Menu>
-            <Dropdown.Item href="#/action-1">Email</Dropdown.Item>
-            <Dropdown.Item href="#/action-2">Github</Dropdown.Item>
-            <Dropdown.Item href="#/action-3">Linkedin</Dropdown.Item>
-            <Dropdown.Item href="#/action-3">Resume</Dropdown.Item>
-          </Dropdown.Menu>
-        </Dropdown>
-      </Container>
-    </Navbar>
+    <>
+      {[false].map((expand) => (
+        <Navbar key="nav" expand={expand} className="bg-body-tertiary mb-3">
+          <Container fluid>
+            <Navbar.Brand>Brendan Keesling</Navbar.Brand>
+            <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
+            <Navbar.Offcanvas
+              id={`offcanvasNavbar-expand-${expand}`}
+              aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
+              placement="end"
+            >
+              <Offcanvas.Header closeButton>
+                <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
+                  Links
+                </Offcanvas.Title>
+              </Offcanvas.Header>
+              <Offcanvas.Body>
+                <Nav className="justify-content-end flex-grow-1 pe-3">
+                  <Nav.Link href="#action1">Home</Nav.Link>
+                  <Nav.Link href="#action2">About</Nav.Link>
+                  <Nav.Link href="#action3">Projects</Nav.Link>
+                  <NavDropdown
+                    title="Contact"
+                    id={`offcanvasNavbarDropdown-expand-${expand}`}
+                  >
+                    <NavDropdown.Item href="#action3">
+                      Linkedin
+                    </NavDropdown.Item>
+                    <NavDropdown.Item href="#action4">Github</NavDropdown.Item>
+                    <NavDropdown.Item href="#action5">Email</NavDropdown.Item>
+                    <NavDropdown.Divider />
+                    <NavDropdown.Item href="#action6">Resume</NavDropdown.Item>
+                  </NavDropdown>
+                </Nav>
+              </Offcanvas.Body>
+            </Navbar.Offcanvas>
+          </Container>
+        </Navbar>
+      ))}
+    </>
   );
 }
 
