@@ -3,7 +3,6 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import Offcanvas from "react-bootstrap/Offcanvas";
-
 function NavBar() {
   return (
     <>
@@ -11,6 +10,8 @@ function NavBar() {
         <Navbar key="nav" expand={expand} className="bg-body-tertiary mb-3">
           <Container fluid>
             <Navbar.Brand>Brendan Keesling</Navbar.Brand>
+            <Nav.Link href="#about">About</Nav.Link>
+            <Nav.Link href="#projects">Projects</Nav.Link>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
             <Navbar.Offcanvas
               id={`offcanvasNavbar-expand-${expand}`}
@@ -24,20 +25,22 @@ function NavBar() {
               </Offcanvas.Header>
               <Offcanvas.Body>
                 <Nav className="justify-content-end flex-grow-1 pe-3">
-                  <Nav.Link href="#action1">Home</Nav.Link>
-                  <Nav.Link href="#action2">About</Nav.Link>
-                  <Nav.Link href="#action3">Projects</Nav.Link>
+                  <Nav.Link href="#home">Home</Nav.Link>
+                  <Nav.Link href="#about">About</Nav.Link>
+                  <Nav.Link href="#projects">Projects</Nav.Link>
                   <NavDropdown
                     title="Contact"
                     id={`offcanvasNavbarDropdown-expand-${expand}`}
                   >
-                    <NavDropdown.Item href="#action3">
+                    <NavDropdown.Item href="https://www.linkedin.com/in/brendan-keesling/">
                       Linkedin
                     </NavDropdown.Item>
-                    <NavDropdown.Item href="#action4">Github</NavDropdown.Item>
-                    <NavDropdown.Item href="#action5">Email</NavDropdown.Item>
+                    <NavDropdown.Item href="https://github.com/KeeslingB">
+                      Github
+                    </NavDropdown.Item>
+                    <NavDropdown.Item href="#email">Email</NavDropdown.Item>
                     <NavDropdown.Divider />
-                    <NavDropdown.Item href="#action6">Resume</NavDropdown.Item>
+                    <NavDropdown.Item href="#resume">Resume</NavDropdown.Item>
                   </NavDropdown>
                 </Nav>
               </Offcanvas.Body>
