@@ -10,8 +10,8 @@ function NavBar() {
         <Navbar key="nav" expand={expand} className="bg-body-tertiary mb-3">
           <Container fluid>
             <Navbar.Brand>Brendan Keesling</Navbar.Brand>
-            <Nav.Link href="#about">About</Nav.Link>
-            <Nav.Link href="#projects">Projects</Nav.Link>
+            {/* <Nav.Link href="/about">About</Nav.Link>
+            <Nav.Link href="/projects">Projects</Nav.Link> */}
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
             <Navbar.Offcanvas
               id={`offcanvasNavbar-expand-${expand}`}
@@ -25,9 +25,9 @@ function NavBar() {
               </Offcanvas.Header>
               <Offcanvas.Body>
                 <Nav className="justify-content-end flex-grow-1 pe-3">
-                  <Nav.Link href="#home">Home</Nav.Link>
-                  <Nav.Link href="#about">About</Nav.Link>
-                  <Nav.Link href="#projects">Projects</Nav.Link>
+                  <Nav.Link href={"/"}>Home</Nav.Link>
+                  <Nav.Link href={"/about"}>About</Nav.Link>
+                  <Nav.Link href="/projects">Projects</Nav.Link>
                   <NavDropdown
                     title="Contact"
                     id={`offcanvasNavbarDropdown-expand-${expand}`}
@@ -40,7 +40,7 @@ function NavBar() {
                     </NavDropdown.Item>
                     <NavDropdown.Item href="#email">Email</NavDropdown.Item>
                     <NavDropdown.Divider />
-                    <NavDropdown.Item href="#resume">Resume</NavDropdown.Item>
+                    <NavDropdown.Item href="/resume">Resume</NavDropdown.Item>
                   </NavDropdown>
                 </Nav>
               </Offcanvas.Body>
