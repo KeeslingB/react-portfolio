@@ -1,6 +1,9 @@
-/* .name {
-  font-family: "EB Garamond", serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-} */
+/*  color pallete
+     #EDFFEC -- background / text
+     #61E786 -- keywords / links
+     #04080F -- dark background / nav
+     #F75590 -- special links / visited */
+
+.background {
+  background-color: #04080f;
+}
