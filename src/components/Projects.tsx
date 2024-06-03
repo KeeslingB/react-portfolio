@@ -1,25 +1,59 @@
-import Card from "react-bootstrap/Card";
-import Button from "react-bootstrap/Button";
 import mvc from "../assets/images/mvc-armory.png";
+import madlibs from "../assets/images/madlibs-react.png";
+import express from "../assets/images/express-backend.png";
+import tracker from "../assets/images/nodejs-tracker.png";
+import Button from "react-bootstrap/Button";
+import Card from "react-bootstrap/Card";
 function Projects() {
   return (
-    <Card style={{ width: "25rem" }} className="bg-dark text-white m-auto">
-      <Card.Img src={mvc} alt="Card img-thumbnail" />
-      <Card.ImgOverlay>
-        <Card.Title>MVC-Armory</Card.Title>
-        <Card.Text>
-          This is a wider card with supporting text below as a natural lead-in
-          to additional content. This content is a little bit longer.
-        </Card.Text>
-        {/* <Card.Text>Last updated 3 mins ago</Card.Text> */}
-        <Button
-          variant="success"
-          href="https://github.com/KeeslingB/mvc-armory"
-        >
-          Source Code
-        </Button>
-      </Card.ImgOverlay>
-    </Card>
+    <>
+      <div className="flex">
+        <Card className="m-auto" style={{ width: "18rem" }}>
+          <Card.Img variant="top" src={mvc} />
+          <Card.Body>
+            <Card.Title>Card Title</Card.Title>
+            <Card.Text>
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </Card.Text>
+            <Button variant="primary">Go somewhere</Button>
+          </Card.Body>
+        </Card>
+        <Card className="m-auto" style={{ width: "18rem" }}>
+          <Card.Img variant="top" src={madlibs} />
+          <Card.Body>
+            <Card.Title>Card Title</Card.Title>
+            <Card.Text>
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </Card.Text>
+            <Button variant="primary">Go somewhere</Button>
+          </Card.Body>
+        </Card>
+        <Card className="m-auto" style={{ width: "18rem" }}>
+          <Card.Img variant="top" src={express} />
+          <Card.Body>
+            <Card.Title>Card Title</Card.Title>
+            <Card.Text>
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </Card.Text>
+            <Button variant="primary">Go somewhere</Button>
+          </Card.Body>
+        </Card>
+        <Card className="m-auto" style={{ width: "18rem" }}>
+          <Card.Img variant="top" src={tracker} />
+          <Card.Body>
+            <Card.Title>Card Title</Card.Title>
+            <Card.Text>
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </Card.Text>
+            <Button variant="primary">Go somewhere</Button>
+          </Card.Body>
+        </Card>
+      </div>
+    </>
   );
 }
 
