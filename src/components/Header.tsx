@@ -1,10 +1,8 @@
-// import Navigation from "./Navigation";
-import NavBar from "./NavBar";
+import Navigation from "./Navigation";
 function Header() {
   return (
     <header>
-      <NavBar />
-      {/* <Navigation /> */}
+      <Navigation />
     </header>
   );
 }
