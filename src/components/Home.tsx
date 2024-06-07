@@ -1,15 +1,13 @@
 function Home() {
   return (
-    <section id="home">
+    <div id="home">
       <div className="jumbotron">
         <div className="container text-center home">
-          <h1>Brendan Keesling</h1>
-          <br></br>
-          <p>some text about me.</p>
-          <br></br>
+          <h2>Brendan Keesling</h2>
+          <p>As a Web Developer.</p>
         </div>
       </div>
-    </section>
+    </div>
   );
 }
 export default Home;
