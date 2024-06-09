@@ -1,11 +1,8 @@
 function Home() {
   return (
     <div id="home">
-      <div className="jumbotron">
-        <div className="container text-center home">
-          <h2>Brendan Keesling</h2>
-          <p>As a Web Developer.</p>
-        </div>
+      <div className="container text-center home">
+        <h2>Background in mechanics transitioning into web development</h2>
       </div>
     </div>
   );
