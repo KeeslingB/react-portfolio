@@ -4,8 +4,8 @@ import Navbar from "react-bootstrap/Navbar";
 import emoji from "../assets/images/emoji.jpg";
 function Navigation() {
   return (
-    <Navbar>
-      <Container className="nav">
+    <Navbar className="nav">
+      <Container>
         <img className="emoji" src={emoji} alt="emoji" />
         <Nav>
           <Nav.Link href="#home">Home</Nav.Link>

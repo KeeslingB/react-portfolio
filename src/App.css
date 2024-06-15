@@ -17,25 +17,28 @@
 }
 
 .app {
-  /* background-color: #fff1d0; */
+  background-color: #fff1d0;
   /* background-image: url("./assets/images/background.webp"); */
   /* background-repeat: no-repeat; */
 }
 
 .nav {
-  /* position: fixed !important; */
+  position: fixed !important;
 }
 
 .home {
   /* background-color: #f0c808; */
   height: 40rem;
-  margin: 0;
+}
+.home-content {
+  align-content: center;
 }
 .about {
   height: 40rem;
 }
 .projects {
   height: 40rem;
+  margin: 3rem;
 }
 .contact {
   height: 40rem;
