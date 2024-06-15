@@ -1,8 +1,9 @@
 function Home() {
   return (
-    <div id="home">
-      <div className="container text-center home">
+    <div id="home" className="home">
+      <div className="container text-center">
         <p>text here about me</p>
+        <p>More text here.</p>
       </div>
     </div>
   );

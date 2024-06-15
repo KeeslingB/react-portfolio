@@ -7,7 +7,7 @@ import Card from "react-bootstrap/Card";
 function Projects() {
   return (
     <>
-      <div id="projects" className="flex">
+      <div id="projects" className="projects">
         <Card className="m-auto" style={{ width: "18rem" }}>
           <Card.Img variant="top" src={mvc} />
           <Card.Body>

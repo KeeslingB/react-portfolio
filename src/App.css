@@ -30,6 +30,13 @@
   justify-content: baseline;
 }
 .about {
+  height: 40rem;
+}
+.projects {
+  height: 40rem;
+}
+.contact {
+  height: 40rem;
 }
 
 /* .home {
