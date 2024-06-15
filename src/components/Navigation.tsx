@@ -4,10 +4,10 @@ import Navbar from "react-bootstrap/Navbar";
 import emoji from "../assets/images/emoji.jpg";
 function Navigation() {
   return (
-    <Navbar className="nav">
-      <Container>
+    <Navbar>
+      <Container className="nav">
         <img className="emoji" src={emoji} alt="emoji" />
-        <Nav className="m-auto">
+        <Nav>
           <Nav.Link href="#home">Home</Nav.Link>
           <Nav.Link href="#about">About</Nav.Link>
           <Nav.Link href="#projects">Projects</Nav.Link>

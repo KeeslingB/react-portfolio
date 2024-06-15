@@ -6,8 +6,9 @@
      */
 
 * {
-  font-family: "Prata", serif;
-  font-weight: 400;
+  font-family: "Oswald", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
   font-style: normal;
 }
 
@@ -21,13 +22,14 @@
   /* background-repeat: no-repeat; */
 }
 
+.nav {
+  /* position: fixed !important; */
+}
+
 .home {
   /* background-color: #f0c808; */
   height: 40rem;
   margin: 0;
-}
-.container {
-  justify-content: baseline;
 }
 .about {
   height: 40rem;
@@ -38,18 +40,3 @@
 .contact {
   height: 40rem;
 }
-
-/* .home {
-  font-family: "Notable", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-} */
-
-/* .nav {
-  background-color: #096788;
-  color: #fff1d0;
-}
-
-.home {
-  background-color: #f0c808;
-} */
