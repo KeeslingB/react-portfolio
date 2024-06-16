@@ -12,34 +12,39 @@
   font-style: normal;
 }
 
-.emoji {
-  height: 2rem;
+#app {
+  /* background-color: #fff1d0; */
 }
 
-.app {
+#nav {
+  display: flex;
+  justify-content: space-evenly;
   background-color: #fff1d0;
-  /* background-image: url("./assets/images/background.webp"); */
-  /* background-repeat: no-repeat; */
+  height: 2rem;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+.links {
+  color: #086788;
 }
 
-.nav {
-  position: fixed !important;
+#home {
+  height: 40rem;
+  display: flex-start;
+  justify-content: baseline;
 }
-
-.home {
-  /* background-color: #f0c808; */
+.emoji {
+  height: 20rem;
+}
+#about {
+  height: 40rem;
+  background-color: #fff1d0;
+}
+#projects {
   height: 40rem;
 }
-.home-content {
-  align-content: center;
-}
-.about {
+#contact {
   height: 40rem;
-}
-.projects {
-  height: 40rem;
-  margin: 3rem;
-}
-.contact {
-  height: 40rem;
+  background-color: #fff1d0;
 }
