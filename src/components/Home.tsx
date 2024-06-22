@@ -1,11 +1,14 @@
-import emoji from "../assets/images/emoji.jpg";
+import Navigation from "./Navigation";
 function Home() {
   return (
-    <div id="home">
-      <img className="emoji" src={emoji} alt="emoji" />
-      <p>text here about me</p>
-      <p>More text here.</p>
-    </div>
+    <>
+      <div>
+        <Navigation />
+      </div>
+      <div id="home">
+        <h1>Welcome</h1>
+      </div>
+    </>
   );
 }
 export default Home;

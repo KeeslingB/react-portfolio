@@ -13,36 +13,35 @@
 }
 
 #app {
-  /* background-color: #fff1d0; */
 }
 
 #nav {
   display: flex;
-  justify-content: space-evenly;
-  background-color: #fff1d0;
+  justify-content: space-around;
+  background-color: rgba(0, 0, 0, 0.459);
   height: 2rem;
   position: fixed;
   width: 100%;
   z-index: 1;
 }
 .links {
-  color: #086788;
+  color: #277a1f;
 }
 
 #home {
   height: 40rem;
-  display: flex-start;
-  justify-content: baseline;
+  position: relative;
 }
-.emoji {
-  height: 20rem;
-}
+
 #about {
   height: 40rem;
   background-color: #fff1d0;
 }
 #projects {
+  display: inline-block;
+  justify-content: center;
   height: 40rem;
+  width: 18rem;
 }
 #contact {
   height: 40rem;
