@@ -1,10 +1,7 @@
-/*  color pallete
-    #06aed5 - light blue
-    #086788 -- darker blue
-    #f0c808 -- yellow  , keywords
-    #fff1d0 -- offwhite  ,text 
-     */
-
+:root {
+  --main-bg-color: #cde6f5;
+  --txt-color: #87919e;
+}
 * {
   font-family: "Oswald", serif;
   font-optical-sizing: auto;
@@ -12,38 +9,32 @@
   font-style: normal;
 }
 
-#app {
-}
-
 #nav {
   display: flex;
   justify-content: space-around;
-  background-color: rgba(0, 0, 0, 0.459);
+  /* background-color: rgba(0, 0, 0, 0.459); */
   height: 2rem;
   position: fixed;
   width: 100%;
   z-index: 1;
 }
 .links {
-  color: #277a1f;
+  /* color: #277a1f; */
 }
 
 #home {
   height: 40rem;
-  position: relative;
+  background-color: var(--main-bg-color);
+  color: var(--txt-color);
 }
 
-#about {
-  height: 40rem;
-  background-color: #fff1d0;
-}
 #projects {
-  display: inline-block;
+  display: flex;
   justify-content: center;
   height: 40rem;
   width: 18rem;
 }
 #contact {
   height: 40rem;
-  background-color: #fff1d0;
+  background-color: var(--main-bg-color);
 }

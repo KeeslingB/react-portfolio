@@ -4,9 +4,9 @@ function Navigation() {
       <a className="links" href="#home">
         Home
       </a>
-      <a className="links" href="#about">
+      {/* <a className="links" href="#about">
         About
-      </a>
+      </a> */}
       <a className="links" href="#projects">
         Projects
       </a>

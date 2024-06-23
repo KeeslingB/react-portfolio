@@ -6,12 +6,12 @@ import Contact from "./components/Contact";
 function App() {
   return (
     <>
-      <div id="app">
-        <Home />
-        <Projects />
-        <Contact />
-        <Footer />
-      </div>
+      {/* <div id="app"> */}
+      <Home />
+      <Projects />
+      <Contact />
+      <Footer />
+      {/* </div> */}
     </>
   );
 }
