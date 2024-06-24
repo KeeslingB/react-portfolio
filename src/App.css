@@ -19,13 +19,14 @@
   z-index: 1;
 }
 .links {
-  /* color: #277a1f; */
+  color: black;
 }
 
 #home {
   height: 40rem;
   background-color: var(--main-bg-color);
   color: var(--txt-color);
+  justify-content: center;
 }
 
 #projects {
