@@ -9,20 +9,28 @@ function Navigation() {
   return (
     <div id="nav">
       <a className="links" href="#home">
-        <FontAwesomeIcon className="icons" icon={faHouse} />
-        Home
+        <p>
+          <FontAwesomeIcon className="icons" icon={faHouse} />
+          Home
+        </p>
       </a>
       <a className="links" href="#projects">
-        <FontAwesomeIcon className="icons" icon={faBarsProgress} />
-        Projects
+        <p>
+          <FontAwesomeIcon className="icons" icon={faBarsProgress} />
+          Projects
+        </p>
       </a>
       <a className="links" href="#contact">
-        <FontAwesomeIcon className="icons" icon={faAddressCard} />
-        Contact
+        <p>
+          <FontAwesomeIcon className="icons" icon={faAddressCard} />
+          Contact
+        </p>
       </a>
       <a className="links" href="#resume">
-        <FontAwesomeIcon icon={faFile} />
-        Resume
+        <p>
+          <FontAwesomeIcon icon={faFile} />
+          Resume
+        </p>
       </a>
     </div>
   );

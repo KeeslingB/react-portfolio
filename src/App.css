@@ -21,6 +21,7 @@
 .links {
   color: black;
   margin: 3px;
+  text-decoration: none;
 }
 .links :hover {
   color: white;
