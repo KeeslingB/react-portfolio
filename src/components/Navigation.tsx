@@ -4,35 +4,43 @@ import {
   faBarsProgress,
   faAddressCard,
   faFile,
+  faMobileScreenButton,
 } from "@fortawesome/free-solid-svg-icons";
+import Nav from "react-bootstrap/Nav";
 function Navigation() {
   return (
-    <div id="nav">
-      <a className="links" href="#home">
-        <p>
-          <FontAwesomeIcon className="icons" icon={faHouse} />
+    <Nav variant="underline" className="justify-content-end position-fixed">
+      <Nav.Item>
+        <Nav.Link href="/home">
+          <FontAwesomeIcon icon={faHouse} />
           Home
-        </p>
-      </a>
-      <a className="links" href="#projects">
-        <p>
-          <FontAwesomeIcon className="icons" icon={faBarsProgress} />
+        </Nav.Link>
+      </Nav.Item>
+      <Nav.Item>
+        <Nav.Link eventKey="link-1">
+          <FontAwesomeIcon icon={faAddressCard} />
+          About
+        </Nav.Link>
+      </Nav.Item>
+      <Nav.Item>
+        <Nav.Link eventKey="link-2">
+          <FontAwesomeIcon icon={faBarsProgress} />
           Projects
-        </p>
-      </a>
-      <a className="links" href="#contact">
-        <p>
-          <FontAwesomeIcon className="icons" icon={faAddressCard} />
+        </Nav.Link>
+      </Nav.Item>
+      <Nav.Item>
+        <Nav.Link eventKey="link-3">
+          <FontAwesomeIcon icon={faMobileScreenButton} />
           Contact
-        </p>
-      </a>
-      <a className="links" href="#resume">
-        <p>
+        </Nav.Link>
+      </Nav.Item>
+      <Nav.Item>
+        <Nav.Link eventKey="link-4">
           <FontAwesomeIcon icon={faFile} />
           Resume
-        </p>
-      </a>
-    </div>
+        </Nav.Link>
+      </Nav.Item>
+    </Nav>
   );
 }
 
