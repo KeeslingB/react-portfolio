@@ -12,7 +12,7 @@
 #nav {
   display: flex;
   justify-content: space-evenly;
-  /* background-color: rgba(0, 0, 0, 0.459); */
+  background-color: rgba(0, 0, 0, 0.459);
   height: 2rem;
   position: fixed;
   width: 100%;
@@ -20,21 +20,31 @@
 }
 .links {
   color: black;
+  margin: 3px;
+}
+.links :hover {
+  color: white;
 }
 
 #home {
-  height: 40rem;
+  height: 50rem;
   background-color: var(--main-bg-color);
   color: var(--txt-color);
 }
 
 #projects {
-  display: flex;
   justify-content: center;
-  height: 40rem;
+  height: 50rem;
   width: 18rem;
 }
+.project-card {
+  display: flex;
+}
 #contact {
-  height: 40rem;
+  height: 50rem;
   background-color: var(--main-bg-color);
+}
+#footer {
+  display: block;
+  align-items: center;
 }
