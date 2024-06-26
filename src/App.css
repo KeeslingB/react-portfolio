@@ -3,8 +3,8 @@
   --txt-color: #87919e;
 }
 * {
-  font-family: "Oswald", serif;
+  font-family: "Nunito", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 600;
+  font-weight: 500;
   font-style: normal;
 }

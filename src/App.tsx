@@ -9,7 +9,7 @@ function App() {
     <>
       <main>
         <Navigation />
-        {/* <Home /> */}
+        <Home />
         {/* <Projects /> */}
         {/* <Contact /> */}
         {/* <Footer /> */}

@@ -9,7 +9,7 @@ import {
 import Nav from "react-bootstrap/Nav";
 function Navigation() {
   return (
-    <Nav variant="underline" className="justify-content-end position-fixed">
+    <Nav variant="underline" className="nav-justified">
       <Nav.Item>
         <Nav.Link href="/home">
           <FontAwesomeIcon icon={faHouse} />
@@ -17,7 +17,7 @@ function Navigation() {
         </Nav.Link>
       </Nav.Item>
       <Nav.Item>
-        <Nav.Link eventKey="link-1">
+        <Nav.Link eventKey="#about">
           <FontAwesomeIcon icon={faAddressCard} />
           About
         </Nav.Link>
