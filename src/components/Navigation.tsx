@@ -9,7 +9,7 @@ import {
 import Nav from "react-bootstrap/Nav";
 function Navigation() {
   return (
-    <Nav variant="underline" className="nav-justified">
+    <Nav variant="underline" className="nav-justified flex fixed-top bg-white">
       <Nav.Item>
         <Nav.Link href="/home">
           <FontAwesomeIcon icon={faHouse} />
@@ -17,25 +17,25 @@ function Navigation() {
         </Nav.Link>
       </Nav.Item>
       <Nav.Item>
-        <Nav.Link eventKey="#about">
+        <Nav.Link href="#about">
           <FontAwesomeIcon icon={faAddressCard} />
           About
         </Nav.Link>
       </Nav.Item>
       <Nav.Item>
-        <Nav.Link eventKey="link-2">
+        <Nav.Link href="#projects">
           <FontAwesomeIcon icon={faBarsProgress} />
           Projects
         </Nav.Link>
       </Nav.Item>
       <Nav.Item>
-        <Nav.Link eventKey="link-3">
+        <Nav.Link href="#contact">
           <FontAwesomeIcon icon={faMobileScreenButton} />
           Contact
         </Nav.Link>
       </Nav.Item>
       <Nav.Item>
-        <Nav.Link eventKey="link-4">
+        <Nav.Link href="#resume">
           <FontAwesomeIcon icon={faFile} />
           Resume
         </Nav.Link>

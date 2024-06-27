@@ -8,3 +8,12 @@
   font-weight: 500;
   font-style: normal;
 }
+.jumbotron {
+  height: 60rem;
+}
+#about {
+  height: 50rem;
+}
+#projects {
+  height: 50rem;
+}
