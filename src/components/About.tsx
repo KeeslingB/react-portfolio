@@ -1,7 +1,7 @@
 function About() {
   return (
     <div id="about" className="text-center flex align-content-center">
-      <h3 className="">About</h3>
+      <h3 className="display-4">About</h3>
       <p className="">
         Auto mechanic with extensive diagnostic and repair expertise,
         transitioning to web development post-coding bootcamp. Bringing
