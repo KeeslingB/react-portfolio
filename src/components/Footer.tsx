@@ -1,7 +1,7 @@
 function Footer() {
   return (
-    <footer id="footer">
-      <h3>Footer</h3>
+    <footer id="footer" className="text-center">
+      <p>Made by Me Brendan Keesling</p>
     </footer>
   );
 }
