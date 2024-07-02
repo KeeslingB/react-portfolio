@@ -7,16 +7,14 @@ import Footer from "./components/Footer";
 import Contact from "./components/Contact";
 function App() {
   return (
-    <>
-      <main>
-        <Navigation />
-        <Home />
-        <About />
-        <Projects />
-        {/* <Contact /> */}
-        <Footer />
-      </main>
-    </>
+    <main>
+      <Navigation />
+      <Home />
+      <About />
+      <Projects />
+      <Contact />
+      <Footer />
+    </main>
   );
 }
 export default App;

@@ -5,7 +5,7 @@ import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 function Projects() {
   return (
-    <section
+    <div
       id="projects"
       className="justify-content-center align-content-center text-center"
     >
@@ -33,7 +33,7 @@ function Projects() {
           </Button>
         </Card.Body>
       </Card>
-    </section>
+    </div>
   );
 }
 
