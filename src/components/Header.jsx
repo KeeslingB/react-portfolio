@@ -1,11 +1,12 @@
+import "./Header.css";
 import Nav from "./Nav";
-
 export default function Header() {
   return (
     <>
-      <header className="Header">
+      <div className="Header">
+        <h2 className="name">Brendan Keesling</h2>
         <Nav />
-      </header>
+      </div>
     </>
   );
 }

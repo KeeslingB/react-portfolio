@@ -1,2 +1,22 @@
 .Header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+}
+
+.Nav {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  list-style: none;
+  margin: 0;
+}
+.Nav a {
+  color: blueviolet;
+  text-decoration: none;
+}
+.name {
 }
