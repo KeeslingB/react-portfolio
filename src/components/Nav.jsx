@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import "./Header.css";
 export default function Nav() {
   return (
-    <>
+    <nav>
       <ul className="Nav">
         <li>
           <Link to="/">Home</Link>
@@ -17,6 +17,6 @@ export default function Nav() {
           <Link to="/resume">Resume</Link>
         </li>
       </ul>
-    </>
+    </nav>
   );
 }

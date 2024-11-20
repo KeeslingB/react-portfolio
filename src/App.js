@@ -4,7 +4,7 @@ import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 import Resume from "./pages/Resume";
-
+// lazy load components only when in view or needed.
 function App() {
   return (
     <>
