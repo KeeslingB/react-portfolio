@@ -1,4 +1,4 @@
-.Header {
+.header {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -15,8 +15,6 @@
   margin: 0;
 }
 .Nav a {
-  color: blueviolet;
+  color: rgb(98, 56, 139);
   text-decoration: none;
-}
-.title {
 }

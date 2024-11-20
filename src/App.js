@@ -5,9 +5,10 @@ import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 import Resume from "./pages/Resume";
 // lazy load components only when in view or needed.
+import "./App.css";
 function App() {
   return (
-    <>
+    <div className="App">
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -15,7 +16,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/resume" element={<Resume />} />
       </Routes>
-    </>
+    </div>
   );
 }
 
