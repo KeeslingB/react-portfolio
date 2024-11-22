@@ -1,13 +1,15 @@
 .header {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   width: 100%;
   padding: 1rem;
+  margin: 0.25rem;
+  position: sticky;
 }
 
 .Nav {
-  justify-content: center;
+  /* justify-content: space-around; */
   display: flex;
   align-items: center;
   padding: 1rem;
@@ -17,4 +19,8 @@
 .Nav a {
   color: rgb(98, 56, 139);
   text-decoration: none;
+}
+.title {
+  font-weight: bold;
+  display: flex;
 }
