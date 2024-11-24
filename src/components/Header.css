@@ -5,11 +5,10 @@
   width: 100%;
   padding: 1rem;
   margin: 0.25rem;
-  position: sticky;
+  background-color: #9ea1a3;
 }
 
 .Nav {
-  /* justify-content: space-around; */
   display: flex;
   align-items: center;
   padding: 1rem;
@@ -17,10 +16,19 @@
   margin: 0;
 }
 .Nav a {
-  color: rgb(98, 56, 139);
+  color: #ffff;
   text-decoration: none;
+  margin: 4px;
+  font-weight: bolder;
+}
+.Nav a:hover {
+  color: #e1ce7a;
+}
+.Nav a:active {
+  color: #a7917a;
 }
 .title {
   font-weight: bold;
   display: flex;
+  color: #e1ce7a;
 }
